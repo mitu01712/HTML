@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a singup Form</title>
+    <style>
+        #register-form {
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto; 
+            margin-right: auto;
+
+        }
+        .input-label {
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px;
+
+        }
+        .input-item {
+            width: 100%;
+        }
+        #terms-check {
+            margin-top: 12px;
+            margin-bottom: 18px;
+
+        }
+    </style>
+</head>
+<body style="background-color: lightblue;">
+    <h1 style="text-align: center;">Singup</h1>
+    <form id="register-form" method="GET">
+        <div>
+            <p class="input-label">Full Name:</p><br>
+            <input class="input-item" type="text" name="full-name">       
+         </div>
+
+         <div>
+            <p class="input-label">Email:</p><br>
+            <input class="input-item"  type="email" name="email">       
+         </div>
+
+         <div>
+           <p class="input-label"> Password:</p><br>
+            <input class="input-item"  type="password" name="password">       
+         </div>
+
+         <div>
+            <p class="input-label">Confirm Password:</p><br>
+            <input class="input-item"  type="password" name="confirm-password">       
+         </div>
+
+         <div>
+           <p class="input-label"> Gender:</p><br>
+            <input type="radio" name="male" value="male">
+            Male</input>
+
+            <input type="radio" name="female" value="female">
+            Female</input>
+
+            <input type="radio" name="other" value="other">
+            Other</input>
+         </div>
+
+         <div>
+          <p class="input-label"> Security Question:</p><br>
+            <select class="input-item"  name="security-question">
+             <option value="first-pet-name">What was your first pet name?</option>
+             <option value="first-job">What was your first job?</option>
+             <option value="nick-name">What is your nickname?</option>
+            </select>
+         </div>
+
+         <div>
+            <textarea class="input-item"  name="answer" rows="6" cols="30"></textarea>
+         </div>
+
+         <div>
+            <input id="terms-check" type="checkbox" name="terms-conditions" value="accept">
+            I agree tp accept terms and conditions</input>
+         </div>
+
+         <div>
+            <input type="submit" value="Register">
+         </div>
+    </form>
+</body>
+</html>
